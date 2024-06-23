@@ -1,0 +1,133 @@
+/* Změna barvy pozadí stránky */
+body {
+  background-color: #f5f5f5; /* Nastavte požadovanou barvu pozadí stránky */
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px; /* Zvýšení mezery mezi čtverci na výšku */
+  padding: 20px;
+}
+
+.game-container {
+  border: 2px solid #bbb; /* Změna barvy okrajů pro lepší viditelnost */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px; /* Zvýšení pevné výšky pro všechny kontejnery */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Plynulý přechod pro změnu barvy pozadí a transformace */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Přidání stínu pro zvýraznění čtverců */
+}
+
+.game-container:hover {
+  background-color: #e0e0e0; /* Barva pozadí při najetí myší */
+  transform: scale(1.05); /* Mírné zvětšení při najetí myší */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Zvýšení stínu při najetí myší */
+}
+
+.game-image {
+  max-width: 100%;
+  width: auto;
+  height: 200px; /* Nastavte pevnou výšku pro obrázky */
+  object-fit: contain; /* Zajistěte, že obrázky se přizpůsobí a nebudou deformované */
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.price {
+  font-size: 20px;
+  color: #49a;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Mezera mezi tlačítky */
+}
+
+.buy-button, .details-button {
+  flex-basis: 50%; /* Zajistěte, aby tlačítka byla stejně široká a vyplnila zbývající prostor */
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.buy-button {
+  background-color: #ff5252;
+}
+
+.details-button {
+  background-color: #009688;
+  
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px; /* Zvýšení mezery nad ikonami */
+}
+
+.game-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px; /* Zvýšení velikosti písma */
+}
+
+.game-info-item p {
+  margin: 0;
+}
+
+.icon {
+  width: 30px; /* Zvýšení velikosti pro ikony */
+  height: 30px;
+  margin-bottom: 5px;
+}
+.icon_jazyk {
+  width:15px;
+  height:15px;
+}
+.banner-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.slogan {
+  text-align: center;
+  font-size: 2.5rem; /* Velikost písma */
+  color: #333; /* Barva textu */
+  margin: 20px 0; /* Vertikální odsazení */
+  padding: 10px; /* Vnitřní odsazení */
+  background-color: rgba(255, 255, 255, 0.8); /* Poloprůhledné pozadí */
+  border-radius: 10px; /* Zaoblené rohy */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stín */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Hravé písmo */
+}
